@@ -8,27 +8,18 @@
 #include <vector>
 #include <map>
 
-#include "VehicleFSM.h"
-#include "../Vehicle.h"
-
 using namespace std;
 
 class BehaviorController {
 
 public:
   BehaviorController() {
-    finiteStateMachine = VehicleFSM();
+
   };
 
   virtual ~BehaviorController() {};
 
-  VehicleFSM finiteStateMachine;
 
-  /**
-   * Evaluates the positions of the vehicles on the road to determine which state transitions are currently safe.
-   * @return list of events which are safe to transition to.
-   */
-  vector<tinyfsm::Event> getSafeStateTransitions(map<int, Vehicle>);
 };
 
 

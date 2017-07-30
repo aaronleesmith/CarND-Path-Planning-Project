@@ -28,7 +28,7 @@ set(sources src/main.cpp
         src/PathConverter.cpp
         src/PathConverter.h
         src/TelemetryHandler.cpp
-        src/TelemetryHandler.h src/TrajectoryGenerator/Trajectory.h src/TrajectoryGenerator/CostFunctions/DDiffCostFunction.h src/TrajectoryGenerator/CostFunctions/SDiffCostFunction.h)
+        src/TelemetryHandler.h src/TrajectoryGenerator/Trajectory.h src/TrajectoryGenerator/CostFunctions/DDiffCostFunction.h src/TrajectoryGenerator/CostFunctions/SDiffCostFunction.h src/Behavior/States/State.h src/Behavior/States/KeepLaneState.h)
 
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
