@@ -8,7 +8,7 @@
 #include "Eigen-3.3/Eigen/Dense"
 #include <vector>
 
-#include "TrajectoryGenerator/Trajectory.h";
+#include "TrajectoryGenerator/Trajectory.h"
 
 using namespace std;
 
@@ -17,7 +17,7 @@ class Vehicle {
   int max_history_length = 100;
 
 public:
-  static const double VEHICLE_RADIUS = 1.5;
+  static constexpr double VEHICLE_RADIUS = 1.5;
 
   Vehicle() {};
 
